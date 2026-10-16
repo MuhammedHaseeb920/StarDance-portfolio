@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title> My Stardance portfolio </title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #0f172a;
+                color: #f8fafc;
+                padding: 2rem;
+                text-align: center;
+            }
+            .card {
+                background: #1e293b;
+                padding: 1.5rem;
+                border-radius: 10px;
+                margin: 1.5 rem auto;
+                max-width: 600px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            }
+            .project-grid{
+                display:  grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 1rem;
+                margin-top: 1rem;
+            }
+            .project-card {
+                background: #0f172a;
+                padding: 1rem;
+                border-radius: 8px;
+                border: 1px solid #334155;
+                text-align: left;
+            }
+            .btn {display: inline-block;
+                margin-top: 10px;
+                padding: 8px 16px;
+                background-color: #38bdf8;
+                color: #0f172a;
+                text-decoration: none;
+                font-weight: bold;
+                border-radius: 6px;
+            }
+            
+            .btn:hover {
+                background-color: #0284c7;
+            }
+
+            .skills-container {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                margin-top: 1rem;
+                justify-content: center;
+            }
+
+            .skill-tag {
+                background: #0f172a;
+                border: 1px solid #38bdf8;
+                color: #38bdf8;
+                padding: 6px 14px;
+                border-radius: 20px;
+                font-size: 0.9rem;
+                font-weight: 600;
+            }
+            </style>
+        </head>
+        <body>
+            <h1>Developer Portfolio</h1>
+            <p>Building clean web applications and software projects.</p>
+
+            <!-- About section -->
+            <div class="card">
+                <h2>About Me</h2>
+                <p>I am a developer building modern web applications, learning core computer science concepts, and sharpening my programming skills.</p>
+            </div>
+            
+            <!-- Projects section -->
+            <div class="card">
+                <h2>Featured Projects</h2>
+                <div class="project-grid">
+                    <!--Card 1-->
+                    <div class="project-card">
+                     <h3>Personal Portfolio</h3>
+                     <p>A custom dark-mode web application built with HTML, CSS, and mordern responsive layouts.</p>
+                     <a href="#" class="btn">View Source</a>   
+                    </div>
+
+                    <!-- Card 2 -->
+                     <div class="project-card">
+                        <h3>Time tracker utility</h3>
+                        <p>Open-source utilities and control scripts created for task automation and workflow optimization.</p>
+                        <a href="#" class="btn">View Source</a>
+                     </div>
+
+                     <!-- Card 3 -->
+                      <div class="project-card">
+                        <h3>automation tools</h3>
+                        <p>Open-source utilities and control scrips created for task automation and workflow optimization.</p>
+                        <a href="#" class="btn">View source</a>
+                      </div>
+
+                      <!-- Card 4 -->
+                       <div class="project-card">
+                        <h3>Interactive Dashboard</h3>
+                        <p>A dynamic web interface built to monitor respository stats, commit history, and build progress.</p>
+                        <a href="#" class="btn">View source</a>
+                       </div>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+             <div class="card">
+                <h2>Tech stack and skills</h2>
+                <div class="skills-container">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Git and Github</span>
+                    <span class="skill-tag">VS Code</span>
+                    <span class="skill-tag">Python</span>
+                </div>
+             </div>
+
+             <!-- Contant Section -->
+              <div class="card">
+                <h2>Contact and links</h2>
+                <p> Explore my projects on GitHub or get in touch to collaborate!</p>
+                <a href="https://github.com" class="btn">GitHub Profile</a>
+              </div>
+        </body>
+</html>
